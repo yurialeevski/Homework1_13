@@ -13,5 +13,35 @@ public class Main {
 
         Book book_2 = new Book("Лицейская лирика", author_2,1993);
         System.out.println(book_2.getBookAuthor() + " " + book_2.getBookTitle() + " " + book_2.getBookYearPublishing());
+        System.out.println();
+
+        System.out.println(author_1);
+        System.out.println(book_1);
+        System.out.println();
+
+        Author author_3 = new Author("Александр", "Пушкин");
+        if(author_1.equals(author_2)) {
+            System.out.println(author_1 + " и " + author_2 + " - это один и тот же автор");
+        } else {
+            System.out.println(author_1.getAuthorLastname() + " и " + author_2.getAuthorLastname() + " - это разные авторы");
+        }
+        if(author_2.equals(author_3)) {
+            System.out.println(author_2.getAuthorLastname() + " и " + author_3.getAuthorLastname() + " - это один и тот же автор");
+        } else {
+            System.out.println(author_2.getAuthorLastname() + " и " + author_3.getAuthorLastname() + " - это разные авторы");
+        }
+        System.out.println();
+
+        Book book_3 = new Book("Лицейская лирика", author_2,1993);
+        if(book_1.equals(book_2)) {
+            System.out.println(book_1.getBookTitle() + " и " + book_2.getBookTitle() + " - это одинаковые книги");
+        } else {
+            System.out.println(book_1.getBookTitle() + " и " + book_2.getBookTitle() + " - это разные книги");
+        }
+        if(book_2.equals(book_3)) {
+            System.out.println(book_2.getBookTitle() + " и " + book_3.getBookTitle() + " - это одинаковые книги");
+        } else {
+            System.out.println(book_2.getBookTitle() + " и " + book_3.getBookTitle() + " - это разные книги");
+        }
     }
 }
